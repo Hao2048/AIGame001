@@ -22,6 +22,10 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 *.log
+.DS_Store
+Thumbs.db
+/Assets/QA/
+/Assets/QA.meta
 
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
 *.blend1
@@ -33,6 +37,34 @@
 
 # Recordings can get excessive in size
 /[Rr]ecordings/
+
+# Showcase capture intermediates (the edited MP4 and GIF remain shareable).
+/Showcase/raw/
+/Showcase/edit/generated/
+/Showcase/edit/*.json
+
+# Optional third-party models stay local; the public project has an original built-in character.
+/Assets/Resources/Realism/Renderpeople/
+/Assets/Resources/Realism/Renderpeople.meta
+/Assets/LocalOnly/
+/Assets/LocalOnly.meta
+/ArtSource/Downloaded/
+/ArtSource/ArchiveSelfModel/
+
+# The local preview can contain the optional character's serialized rig.
+# OfficeGame.unity is the redistributable, built-in-character scene.
+/Assets/Scenes/SampleScene.unity
+/Assets/Scenes/SampleScene.unity.meta
+
+# Earlier material experiments and development captures are not runtime requirements.
+/Assets/Resources/Realism/Textures/
+/Assets/Resources/Realism/Textures.meta
+/Assets/Art/
+/Assets/Art.meta
+/BasePipelineServer.cs.orig-backup
+/QA/*
+!/QA/polish_verify.py
+!/QA/verify_volume_controls.cs
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
