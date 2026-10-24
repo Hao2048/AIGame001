@@ -37,6 +37,7 @@ Thumbs.db
 
 # Recordings can get excessive in size
 /[Rr]ecordings/
+/Release/
 
 # Showcase capture intermediates (the edited MP4 and GIF remain shareable).
 /Showcase/raw/

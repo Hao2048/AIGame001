@@ -8,6 +8,8 @@
 
 [观看 / 下载 26 秒实机短片](Showcase/boss-coming-showcase.mp4) · [玩法与设计思路](Docs/DESIGN.md) · [开发与验证](Docs/DEVELOPMENT.md) · [人物与素材说明](Docs/ASSETS.md)
 
+**macOS 下载：** [Boss Is Coming v0.1.0 · Universal DMG](https://github.com/Hao2048/BossIsComing/releases/latest)（Apple Silicon / Intel，macOS 12+）。这是未进行 Developer ID 签名和 Apple 公证的预览版本，安装与首次打开说明见 [macOS 指南](Docs/MACOS.md)。
+
 > 视频使用了可选下载的人物。公开仓库自带原创简化老板，克隆后即可运行，无需付费模型或美术服务。可选人物的导入步骤见[素材说明](Docs/ASSETS.md)。
 
 ## 怎么玩
