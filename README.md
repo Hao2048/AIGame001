@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <img src="Docs/images/start-screen.png" alt="老板来了：游戏开始画面与操作说明" width="960">
+  <img src="Docs/images/game-start-clean.png" alt="老板来了：游戏开始画面与操作说明" width="960">
 </p>
 
 <p align="center"><sub>游戏开始画面 · 公开版本实机截图</sub></p>
