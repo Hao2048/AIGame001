@@ -1,26 +1,69 @@
-# 老板来了 · 办公室摸鱼模拟器
+<p align="center">
+  <img src="Assets/Branding/AppIcon.png" alt="老板来了游戏图标" width="128" height="128">
+</p>
 
-**上班摸鱼不是技术，是演技。**
+<h1 align="center">老板来了 · Boss Is Coming</h1>
+
+<p align="center"><strong>上班摸鱼不是技术，是演技。</strong></p>
+
+<p align="center">
+  75 秒办公室生存挑战 · 带薪打枪 · 一键切 Excel · 躲过老板的回头
+</p>
+
+<p align="center">
+  <a href="https://github.com/Hao2048/BossIsComing/releases/latest">下载 macOS 版</a> ·
+  <a href="#实机演示">观看演示</a> ·
+  <a href="#怎么玩">游戏玩法</a> ·
+  <a href="Docs/DESIGN.md">设计思路</a> ·
+  <a href="#运行项目">运行源码</a>
+</p>
+
+<p align="center">
+  <img src="Docs/images/start-screen.png" alt="老板来了：游戏开始画面与操作说明" width="960">
+</p>
+
+<p align="center"><sub>游戏开始画面 · 公开版本实机截图</sub></p>
 
 一款固定工位视角的 Unity 小游戏：老板转身时带薪打枪，老板回头前一键切成 Excel。在下班前的 **75 秒** 里攒满摸鱼值，同时保住三次容错机会。
 
-[![老板，听我解释。](Showcase/preview.gif)](Showcase/boss-coming-showcase.mp4)
+## 下载即玩
 
-[观看 / 下载 26 秒实机短片](Showcase/boss-coming-showcase.mp4) · [玩法与设计思路](Docs/DESIGN.md) · [开发与验证](Docs/DEVELOPMENT.md) · [人物与素材说明](Docs/ASSETS.md)
+<p align="center">
+  <a href="https://github.com/Hao2048/BossIsComing/releases/latest"><strong>下载 Boss Is Coming · macOS Universal DMG</strong></a><br>
+  <sub>Apple Silicon / Intel · macOS 12+ · 无需安装 Unity</sub>
+</p>
 
-**macOS 下载：** [Boss Is Coming v0.1.0 · Universal DMG](https://github.com/Hao2048/BossIsComing/releases/latest)（Apple Silicon / Intel，macOS 12+）。这是未进行 Developer ID 签名和 Apple 公证的预览版本，安装与首次打开说明见 [macOS 指南](Docs/MACOS.md)。
+当前发布版为 **v0.1.0**，未进行 Developer ID 签名和 Apple 公证。安装与首次打开说明见 [macOS 指南](Docs/MACOS.md)。
 
-> 视频使用了可选下载的人物。公开仓库自带原创简化老板，克隆后即可运行，无需付费模型或美术服务。可选人物的导入步骤见[素材说明](Docs/ASSETS.md)。
+## 实机演示
+
+<p align="center">
+  <a href="Showcase/boss-coming-showcase.mp4">
+    <img src="Showcase/preview.gif" alt="点击观看实机短片：老板接电话、极限切屏与贪枪被抓" width="960">
+  </a>
+</p>
+
+<p align="center">
+  <a href="Showcase/boss-coming-showcase.mp4"><strong>▶ 观看 / 下载 26 秒实机短片</strong></a><br>
+  <sub>老板探头 → 带薪打枪 → 极限切屏 → 贪枪被抓 → 老板走了继续摸鱼</sub>
+</p>
+
+> 演示短片使用了可选下载的人物。公开仓库和 macOS 安装包自带原创卡通老板，克隆后即可运行。两种版本的玩法一致，可选人物导入步骤见[素材说明](Docs/ASSETS.md)。
 
 ## 怎么玩
 
 玩家坐在工位前，屏幕里的射击游戏会自动瞄准和开火。你真正要操作的是**观察老板，决定什么时候摸鱼、什么时候装忙**。
 
-| 操作 | 效果 |
-| --- | --- |
-| 任意键 | 从标题画面开始 |
-| 空格 / 回车 / 鼠标点击 | 在射击游戏和工作表格之间切换 |
-| Esc | 暂停 / 继续，倒计时和声音一起暂停 |
+<table align="center">
+  <thead>
+    <tr><th align="center">操作</th><th align="center">效果</th></tr>
+  </thead>
+  <tbody>
+    <tr><td align="center">任意键</td><td align="left">从标题画面开始</td></tr>
+    <tr><td align="center">空格 / 回车 / 鼠标点击</td><td align="left">在射击游戏和工作表格之间切换</td></tr>
+    <tr><td align="center">Esc</td><td align="left">暂停 / 继续，倒计时和声音一起暂停</td></tr>
+  </tbody>
+</table>
 
 一局中会发生这些事：
 
@@ -32,18 +75,23 @@
 
 ### 输赢与风险收益
 
-| 规则 | 当前数值 |
-| --- | --- |
-| 单局时限 | 75 秒 |
-| 胜利目标 | 摸鱼值达到 100 |
-| 摸鱼基础收益 | 每秒 +4.4 |
-| 连续收益上限 | 连摸 6 秒达到 ×1.6 |
-| 引起注意 | 连摸约 5 秒后，老板会更早检查 |
-| 工作时的代价 | 摸鱼值每秒 -1.2 |
-| 被抓判定 | 被盯着时仍摸鱼，持续约 0.38 秒 |
-| 被抓惩罚 | 扣一次机会，并损失至少 15 点或当前一半进度 |
-| 容错机会 | 3 次；用尽或倒计时结束则失败 |
-| 及时切屏奖励 | 额外 +2.5 摸鱼值，并累计表演奖励 |
+<table align="center">
+  <thead>
+    <tr><th align="center">规则</th><th align="center">当前数值</th></tr>
+  </thead>
+  <tbody>
+    <tr><td align="center">单局时限</td><td align="left">75 秒</td></tr>
+    <tr><td align="center">胜利目标</td><td align="left">摸鱼值达到 100</td></tr>
+    <tr><td align="center">摸鱼基础收益</td><td align="left">每秒 +4.4</td></tr>
+    <tr><td align="center">连续收益上限</td><td align="left">连摸 6 秒达到 ×1.6</td></tr>
+    <tr><td align="center">引起注意</td><td align="left">连摸约 5 秒后，老板会更早检查</td></tr>
+    <tr><td align="center">工作时的代价</td><td align="left">摸鱼值每秒 -1.2</td></tr>
+    <tr><td align="center">被抓判定</td><td align="left">被盯着时仍摸鱼，持续约 0.38 秒</td></tr>
+    <tr><td align="center">被抓惩罚</td><td align="left">扣一次机会，并损失至少 15 点或当前一半进度</td></tr>
+    <tr><td align="center">容错机会</td><td align="left">3 次；用尽或倒计时结束则失败</td></tr>
+    <tr><td align="center">及时切屏奖励</td><td align="left">额外 +2.5 摸鱼值，并累计表演奖励</td></tr>
+  </tbody>
+</table>
 
 **最稳的做法是认真工作，最诱人的做法是再打一枪。** 游戏的张力就来自这两种选择之间的摇摆。
 
@@ -57,14 +105,19 @@
 
 ## 为什么这样设计
 
-| 设计选择 | 想带来的体验 |
-| --- | --- |
-| 固定工位视角 | 让显示器、老板和雷达形成稳定的注意力分配，不靠移动操作增加负担 |
-| 只保留一个核心按键 | 上手门槛低，输赢归因到“判断和贪心”，而不是复杂操作 |
-| 射击自动进行 | 枪战负责热闹和即时反馈，切屏才是主玩法 |
-| 连摸收益与主动检查联动 | 让风险来自玩家主动选择，避免单纯等待随机惩罚 |
-| 有预警的观察状态 | 老板可以吓人，但抓人需要可读、可反应的窗口 |
-| 卡通光照和程序动作 | 用统一的夸张表现服务喜剧，而不是追求写实办公室的细枝末节 |
+<table align="center">
+  <thead>
+    <tr><th align="center">设计选择</th><th align="center">想带来的体验</th></tr>
+  </thead>
+  <tbody>
+    <tr><td align="center">固定工位视角</td><td align="left">让显示器、老板和雷达形成稳定的注意力分配，不靠移动操作增加负担</td></tr>
+    <tr><td align="center">只保留一个核心按键</td><td align="left">上手门槛低，输赢归因到“判断和贪心”，而不是复杂操作</td></tr>
+    <tr><td align="center">射击自动进行</td><td align="left">枪战负责热闹和即时反馈，切屏才是主玩法</td></tr>
+    <tr><td align="center">连摸收益与主动检查联动</td><td align="left">让风险来自玩家主动选择，避免单纯等待随机惩罚</td></tr>
+    <tr><td align="center">有预警的观察状态</td><td align="left">老板可以吓人，但抓人需要可读、可反应的窗口</td></tr>
+    <tr><td align="center">卡通光照和程序动作</td><td align="left">用统一的夸张表现服务喜剧，而不是追求写实办公室的细枝末节</td></tr>
+  </tbody>
+</table>
 
 更完整的取舍、状态机和技术实现见 [DESIGN.md](Docs/DESIGN.md)。
 
@@ -83,7 +136,9 @@
 
 公开版本的默认画面（原创简化角色）：
 
-![公开版本默认角色与办公室](Docs/images/built-in-preview.png)
+<p align="center">
+  <img src="Docs/images/built-in-preview.png" alt="公开版本：原创卡通老板与办公室实机画面" width="960">
+</p>
 
 ## 项目结构
 
